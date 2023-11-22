@@ -246,7 +246,7 @@ public class CustomerMap extends FragmentActivity implements OnMapReadyCallback,
     }
     private void getRouteToMarker(LatLng pickupLatLng) {
         Routing routing = new Routing.Builder()
-                .key("AIzaSyAmZfuYuxnKs9AAMnC1lZdgt-Fpg9oWz0c")
+                .key("Add Your Google Maps API KEY")
                 .travelMode(AbstractRouting.TravelMode.DRIVING)
                 .withListener(this)
                 .alternativeRoutes(false)
