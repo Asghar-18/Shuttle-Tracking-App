@@ -246,7 +246,7 @@ public class CustomerMap extends FragmentActivity implements OnMapReadyCallback,
     }
     private void getRouteToMarker(LatLng pickupLatLng) {
         Routing routing = new Routing.Builder()
-                .key("AIzaSyCitsB18lxEd81-Lmleg5qXr9NCoA54nFI")
+                .key(getString(R.string.maps_api_key))  // Use the API key from strings.xml
                 .travelMode(AbstractRouting.TravelMode.DRIVING)
                 .withListener(this)
                 .alternativeRoutes(false)
@@ -254,7 +254,6 @@ public class CustomerMap extends FragmentActivity implements OnMapReadyCallback,
                 .build();
         routing.execute();
     }
-
 
 
     @Override
